@@ -1,8 +1,9 @@
 import { withRouter } from 'react-router';
+import Paginator from '../../common/paginator';
 import Film from './Film';
 import styles from './style.module.css';
 
-const Films = ({ history, films, incrementPage }) => {
+const Films = ({ history, films, totalPageCount, page, setPage }) => {
   const navigateFilm = (url, route) => {
     history.push({
       pathname: route,
@@ -20,7 +21,11 @@ const Films = ({ history, films, incrementPage }) => {
           ))}
       </div>
       <div className={styles.loadButton}>
-        <button onClick={incrementPage}>Load More</button>
+        <Paginator
+          setPage={setPage}
+          totalPageCount={totalPageCount}
+          page={page}
+        />
       </div>
     </div>
   );

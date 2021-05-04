@@ -2,7 +2,7 @@ import styles from './style.module.css';
 import search from '../../assets/images/search.svg';
 import { API_KEY, baseURL } from '../../common/api/api';
 
-const Search = ({ setFilms, films, fetchData }) => {
+const Search = ({ setFilms, fetchData }) => {
   const onChangeInput = (e) => {
     const fetchResults = async () => {
       if (e.target.value) {

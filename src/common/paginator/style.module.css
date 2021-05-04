@@ -1,0 +1,36 @@
+.paginator {
+  text-align: center;
+}
+
+.pageNumber {
+  font-size: 18px;
+  padding: 2px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.pageNumber:hover {
+  text-decoration: underline;
+}
+
+.pageNumber.selectedPage {
+  padding: 5px 15px;
+  font-weight: 500;
+  border-color: black;
+  background-color: gray;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
